@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zgan.youbao"
+    android:versionCode="1020"
+    android:versionName="@string/app_var" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.hiibox.houseshelter.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hiibox.houseshelter.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.testhomeactivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.HomepageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.CloudEyesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.ImprintingActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.CloudPhotoAlbumActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.SmartAppActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.SelfCenterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.CloudPhotoAlbumDetailsActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.CreditsExchangeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.PasswordSettingActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.VerificationCodeSetting"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.ManageAddressActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.AddAddressActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.ScanCodeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.ManageRFIDCardActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.LoginActivity"
+            android:configChanges="keyboardHidden"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.NetworkSettingsActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.CloudEyesSettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.NewsCloudEyesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.AdviceFeedbackActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.AddRFIDCardActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.AddPictureActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.RegisterActivity"
+            android:configChanges="keyboardHidden"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.GestureSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.CloseGestureActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.FamilyMembersActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.TemperatureAbnormalActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.InvadeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.ShareActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.VoiceDialogActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.AlarmDialogActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.AboutActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.AuthCodeDialogActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.TemperatureDialogActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.LoginDialogActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100551593" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.wifitools.NewWifiListGet"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.RetrievePassword"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.ResetVerifictaicionCode"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.activity.VersionUpdate"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity
+            android:name="com.hiibox.houseshelter.view.ChangeRFidNameDialog"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" >
+        </activity>
+        <activity android:name="com.hiibox.houseshelter.activity.BigPic" />
+        <activity
+            android:name="com.hiibox.houseshelter.activity.MainWalletActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" />
+        <activity
+            android:name="com.hiibox.houseshelter.activity.MainyjydActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ContentOverlay" />
+
+        <service
+            android:name="com.zgan.push.ZganPushService"
+            android:process="com.zgan.youbao.PushService" >
+        </service>
+        <service android:name="com.hiibox.houseshelter.downtools.DownloadFileService" />
+    </application>
+
+</manifest>

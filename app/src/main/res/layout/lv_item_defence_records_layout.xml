@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_access_records_item" >
+
+        <ImageView
+            android:id="@+id/member_head_portrait_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"
+            android:background="@drawable/default_male" />
+        <TextView 
+            android:id="@+id/access_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/access_date_tv"
+            android:layout_alignBottom="@id/access_date_tv"
+            android:text="19:31"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/intrude_text_color" />
+        <TextView 
+            android:id="@+id/member_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/member_head_portrait_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="我"
+            android:textSize="@dimen/font_size_20"
+            android:textColor="@color/intrude_text_color" />
+        <TextView 
+            android:id="@+id/member_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/member_head_portrait_iv"
+            android:layout_below="@id/member_name_tv"
+            android:layout_marginLeft="10dp"
+            android:text="13963352556"
+            android:textSize="@dimen/font_size_12"
+            android:textColor="@color/sliding_menu_tv" />
+        <ImageView 
+            android:id="@+id/defence_flag_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null" />
+        <View 
+            android:layout_below="@id/access_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/access_date_tv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/member_head_portrait_iv"
+            android:layout_toRightOf="@+id/member_head_portrait_iv"
+            android:layout_marginLeft="10dp"
+            android:text="2013/10/29"
+            android:textColor="@color/intrude_text_color"
+            android:textSize="@dimen/font_size_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

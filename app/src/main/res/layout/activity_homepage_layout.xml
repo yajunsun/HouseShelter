@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_homepage">
+
+    <RelativeLayout
+        android:id="@+id/top_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/top_info_normal"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/temperature_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/thermometer_normal"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/spaceholder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20" />
+
+        <TextView
+            android:id="@+id/temperature_description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/temperature_tv"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/temperature_tv"
+            android:text="@string/comfortable"
+            android:textColor="@color/temperature_humidity_des"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/humidity_description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/temperature_description_tv"
+            android:layout_toRightOf="@+id/humidity_tv"
+            android:drawablePadding="2dp"
+            android:drawableRight="@drawable/water1"
+            android:text="@string/humidity_wet"
+            android:textColor="@color/temperature_humidity_des"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:id="@+id/humidity_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/temperature_tv"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/temperature_description_tv"
+            android:drawableLeft="@drawable/humidity_iv"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="@string/spaceholder"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/temperature_description_tv"
+            android:layout_alignLeft="@+id/temperature_description_tv"
+            android:layout_marginBottom="2dp"
+            android:text="℃"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/humidity_description_tv"
+            android:layout_alignLeft="@+id/humidity_description_tv"
+            android:layout_marginBottom="2dp"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_10" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/refresh_imagebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:src="@drawable/refresh_true" />
+
+    <RelativeLayout
+        android:id="@+id/defence_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/cancel_defence"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <SeekBar
+            android:id="@+id/defence_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="100"
+            android:maxHeight="10dp"
+            android:minHeight="10dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/seek_bar_layer"
+            android:scrollbarStyle="outsideOverlay"
+            android:thumb="@drawable/thumb_ttpod_gray_right"
+            android:thumbOffset="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/defence"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/defence_status_layout"
+        android:layout_below="@id/top_info_layout"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7" >
+
+            <ImageView
+                android:id="@+id/shield_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/shield_silver"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:id="@+id/eye_iv1"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/eyes_frame"
+                android:contentDescription="@null"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/eye_iv2"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/eyes_frame"
+                android:contentDescription="@null"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/eye_iv3"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/eyes_frame"
+                android:contentDescription="@null"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/cloud_eyes_iv"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/cloud_eyes_h"
+                android:contentDescription="@null" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/family_members_layout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_family_members" />
+
+            <TextView
+                android:id="@+id/deviceName"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal" />
+        </FrameLayout>
+
+        <TableLayout
+            android:id="@+id/tab_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imprinting_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_imprinting"
+                    android:contentDescription="@null" />
+
+                <RelativeLayout
+                    android:id="@+id/cloud_photo_album_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/cloud_photo_album_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/selector_cloud_photo_album"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/new_pictures_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_new_pictures"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/yjyd_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yjyd_normal"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/smart_app_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_smart_app"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/self_center_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_self_center"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/wallet_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/wallet_normal"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

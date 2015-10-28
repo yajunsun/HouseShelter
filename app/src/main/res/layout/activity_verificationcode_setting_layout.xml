@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_title_bar" >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_iv" />
+
+        <TextView
+            android:id="@+id/confirm_modification_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="@string/device_revisepwd_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <TableRow>
+
+            <TextView
+                android:gravity="right"
+                android:text="@string/device_revisepwd_oldpwd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20" />
+
+            <EditText
+                android:id="@+id/old_password_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_table_one_row"
+                android:hint="@string/device_txt_revisepwd_oldpwd"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:maxLength="20" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15dp" >
+
+            <TextView
+                android:gravity="right"
+                android:text="@string/device_revisepwd_newpwd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20" />
+
+            <EditText
+                android:id="@+id/new_password_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_table_one_row"
+                android:hint="@string/device_txt_revisepwd_newpwd"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:maxLength="20" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15dp" >
+
+            <TextView
+                android:gravity="right"
+                android:text="@string/device_revisepwd_confirmpwd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20" />
+
+            <EditText
+                android:id="@+id/confirm_new_password_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_table_one_row"
+                android:hint="@string/device_txt_revisepwd_confirmpwd"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:maxLength="20" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+             <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/sms_code_bg"
+                android:contentDescription="@null"
+                android:text="@string/device_txt_revisepwd_btn"
+                android:textColor="@color/white" />
+            
+            <Button
+                android:id="@+id/rest_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/sms_code_bg"
+                android:contentDescription="@null"
+                android:text="重置验证密码"
+                android:textColor="@color/white" />
+        </TableRow>
+        
+         <TextView
+            android:layout_marginTop="10dp"
+            android:text="@string/nickname3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16" />
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

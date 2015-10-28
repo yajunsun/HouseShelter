@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-a83579ff4aa529ebda65d9ad78acb88e6e902543.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\libs\Tencent_weixin_sdk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c1f63f70671d69ee38379728e1192db82e289246">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\Tencent_weixin_sdk-a0e17f5d92e39a1fb220ab302da4d82cabf369ff.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\classes-c12c21d14de1d25c2f19c90ff9675177e3f474a8.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\libs\afinal_master_v05.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="276e7f13ab5b6d8856896728a96d94fc665da11a">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\afinal_master_v05-3938ab4c9ab14009a219c7578414bc865f89d03e.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\libs\SinaWeiboSDK.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e81daa09ae0ba8614ac736487b55fe3bb7679b87">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\SinaWeiboSDK-6c8953bad73cbb4b8d81096c7c2a8886bf809fa5.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\libs\iotcamera.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7d87d8092e046c6d64e5ce2dedff2ce9937688a3">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\iotcamera-624462ce207885ec32721bf5f7fbab1074e5bcb3.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\libs\Zxing.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="bd6b097588487313f7a94914fb89d44238964977">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\Zxing-1645edf5026c68c21059bbfadd167e65f0dc8b19.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\libs\actionbarsherlocklibrary.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="270260203249fddc9dd379d7234c05a6877cfc85">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\actionbarsherlocklibrary-780d89e5b569e1c27446a5f0173e44a2cb6182d8.jar" />
+    </item>
+    <item
+        jar="E:\ASWorkspace\HouseShelter\app\libs\Tencent_open_sdk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="880dfe11e49325c4598831e2ca139db58bca6d12">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\Tencent_open_sdk-715e9875f92b0c13a2e76e30760fcfe22c683e45.jar" />
+    </item>
+    <item
+        jar="G:\AndroidSDK\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="E:\ASWorkspace\HouseShelter\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-f4f62e3cb3b2fff4d9fbddac2e22239a15572c41.jar" />
+    </item>
+
+</items>

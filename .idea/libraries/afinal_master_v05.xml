@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="afinal_master_v05">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/afinal_master_v05.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_access_records_item" >
+
+        <ImageView
+            android:id="@+id/member_head_portrait_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/default_male"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/member_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/member_head_portrait_iv"
+            android:text="我"
+            android:textColor="@color/intrude_text_color"
+            android:textSize="@dimen/font_size_20" />
+
+        <TextView
+            android:id="@+id/access_flag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/out_door_iv"
+            android:gravity="center"
+            android:text="出门"
+            android:textColor="@color/intrude_text_color"
+            android:textSize="@dimen/font_size_18" />
+
+      
+        <TextView
+            android:id="@+id/access_date_tv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/member_head_portrait_iv"
+            android:layout_toRightOf="@+id/member_head_portrait_iv"
+            android:text="2013/10/29"
+                        android:layout_marginLeft="15dp"
+            
+            android:textColor="@color/intrude_text_color"
+            android:textSize="@dimen/font_size_12" />
+
+        <TextView
+            android:id="@+id/access_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/access_date_tv"
+            android:layout_alignBottom="@+id/access_date_tv"
+            android:layout_toRightOf="@+id/access_date_tv"
+            android:text="19:31"
+            android:textColor="@color/intrude_text_color"
+            android:textSize="@dimen/font_size_12" />
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/ASWorkspace/HouseShelter/app/src/main/res/layout/lv_item_access_records_layout.xml -->

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_title_bar" >
+        <ImageView 
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/back_iv"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/confirm_modification_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="@string/device_revisepwd_title1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20" />
+    </RelativeLayout>
+    
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp" >
+    
+       <TableRow android:layout_marginTop="10dp">
+	            <TextView 
+	                android:text="@string/nickname2"
+	                android:textColor="@color/white"
+	                android:textSize="@dimen/font_size_18" />
+	            <EditText 
+	                android:id="@+id/phone_code"
+	                android:layout_width="match_parent"
+	                android:layout_weight="1"
+	                android:layout_height="40dp"
+	                android:paddingLeft="5dp"
+	                android:layout_marginRight="10dp"
+	                android:inputType="text"
+	                android:text=""
+	                android:hint="@string/hint_input_device_code2"
+	                android:background="@drawable/bg_table_one_row"
+	                android:textColor="@color/self_center_font"
+	                android:maxLength="5" />
+	            <Button 
+	                android:id="@+id/sms_code"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:text="获取"
+	                android:textColor="@color/white"
+	                android:background="@drawable/sms_code_bg"
+	                android:contentDescription="@null" />
+	        </TableRow>
+        <TableRow android:layout_marginTop="15dp" >
+
+            <TextView
+                android:gravity="right"
+                android:text="@string/device_revisepwd_newpwd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20" />
+
+            <EditText
+                android:id="@+id/new_password_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_table_one_row"
+                android:hint="@string/device_txt_revisepwd_newpwd"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:maxLength="20" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15dp" >
+
+            <TextView
+                android:gravity="right"
+                android:text="@string/device_revisepwd_confirmpwd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_20" />
+
+            <EditText
+                android:id="@+id/confirm_new_password_et"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_table_one_row"
+                android:hint="@string/device_txt_revisepwd_confirmpwd"
+                android:inputType="textPassword"
+                android:paddingLeft="5dp"
+                android:maxLength="20" />
+        </TableRow>
+             <TableRow
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+             <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/sms_code_bg"
+                android:contentDescription="@null"
+                android:text="@string/device_txt_revisepwd_btn"
+                android:textColor="@color/white" />
+            
+        </TableRow>
+    </TableLayout>
+
+    <ProgressBar 
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    
+</LinearLayout>
